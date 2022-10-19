@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: dockertest
+    env: docker
+    rootDir: dockertest
+    healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: 80
